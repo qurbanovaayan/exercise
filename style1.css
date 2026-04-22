@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: whitesmoke;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 120px); /* 🔥 2 sütun */
+  gap: 40px;
+
+}
+.box {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+   animation: spin 2s linear infinite;
+}
+.blue{
+    background: blue;
+     
+}
+.green{
+    background: green;
+    
+}
+.red{
+    background: red;
+  
+}
+.yellow{
+    background: yellow;
+    
+}
+.box:hover {
+  transform: rotate(360deg);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
